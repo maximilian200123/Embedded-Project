@@ -5,12 +5,18 @@
 //#include <MFRC522DriverI2C.h>
 #include <MFRC522DriverPinSimple.h>
 #include <MFRC522Debug.h>
+#include <NTPClient.h>
+#include <WiFiUdp.h>
 
 #ifndef STASSID 
 #define STASSID "OMiLAB"
 #define STAPSK "digifofulbs"
-#define serverUrl "http://10.14.10.113:3000/api/data"
+#define serverUrl "http://localhost:7108/api/data"
 #endif
+
+// Define NTP Client to get time
+WiFiUDP ntpUDP;
+NTPClient timeClient(ntpUDP, "pool.ntp.org");
 
 // Learn more about using SPI/I2C or check the pin assigment for your board: https://github.com/OSSLibraries/Arduino_MFRC522v2#pin-layout
 MFRC522DriverPinSimple ss_pin(2);
@@ -36,6 +42,15 @@ void setup() {
   Serial.print("Connected! IP address: ");
   Serial.println(WiFi.localIP());
 
+  // Initialize a NTPClient to get time
+  timeClient.begin();
+  // Set offset time in seconds to adjust for your timezone, for example:
+  // GMT +1 = 3600
+  // GMT +8 = 28800
+  // GMT -1 = -3600
+  // GMT 0 = 0
+  timeClient.setTimeOffset(7200);
+
   while (!Serial);       // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4).
   
   mfrc522.PCD_Init();    // Init MFRC522 board.
@@ -46,6 +61,10 @@ void setup() {
 void loop() {
 
   unsigned long currentTime = millis();
+
+  timeClient.update();
+
+  String formattedTime = timeClient.getFormattedTime();
 
   // Only allow a new scan if 5 seconds have passed
   if (currentTime - lastReadTime < readInterval) {
@@ -79,12 +98,12 @@ void loop() {
   }
   Serial.println(uidString);
 
-  String HolderName = "Darius si Adina";
-  sendUIDToServer(uidString, HolderName);
+  //String HolderName = "Darius si Adina";
+  sendUIDToServer(uidString,formattedTime);
 }
 
 
-void sendUIDToServer(String uid, String name) {
+void sendUIDToServer(String uid,String datetime) {
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
     WiFiClient client;
@@ -92,7 +111,7 @@ void sendUIDToServer(String uid, String name) {
     http.begin(client, serverUrl);
     http.addHeader("Content-Type", "application/json");
     
-    String jsonPayload = "{\"id\":\"" + uid + "\", \"name\":\"" + name + "\"}";
+    String jsonPayload = "{\"id\":\"" + uid + "\", \"collectionTime\":\"" + datetime + "\"}";
     
     int httpResponseCode = http.POST(jsonPayload);
 
