@@ -6,10 +6,10 @@
 #include <MFRC522DriverPinSimple.h>
 #include <MFRC522Debug.h>
 
-#ifndef STASSID
+#ifndef STASSID 
 #define STASSID "OMiLAB"
 #define STAPSK "digifofulbs"
-#define serverUrl "http://10.14.11.141/api/data"
+#define serverUrl "http://10.14.10.113:3000/api/data"
 #endif
 
 // Learn more about using SPI/I2C or check the pin assigment for your board: https://github.com/OSSLibraries/Arduino_MFRC522v2#pin-layout
@@ -79,7 +79,7 @@ void loop() {
   }
   Serial.println(uidString);
 
-  string HolderName = "Darius si Adina";
+  String HolderName = "Darius si Adina";
   sendUIDToServer(uidString, HolderName);
 }
 
