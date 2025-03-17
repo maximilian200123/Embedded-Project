@@ -1,0 +1,10 @@
+# Build and runtime artifacts
+bin/
+obj/
+out/
+
+# Logs and temp files
+logs/
+*.log
+*.tmp
+*.bak
