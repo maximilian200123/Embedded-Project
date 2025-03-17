@@ -12,11 +12,6 @@ builder.WebHost.UseUrls("http://0.0.0.0:5041");
 builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=GarbageCollections.db"));
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

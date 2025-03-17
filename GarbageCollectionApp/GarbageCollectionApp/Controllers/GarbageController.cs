@@ -22,7 +22,6 @@ namespace GarbageCollectionApp.Controllers
             if (data == null || string.IsNullOrWhiteSpace(data.IdGarbageBin))
                 return BadRequest("Invalid data.");
 
-            data.CollectionTime = DateTime.UtcNow;
             _context.GarbageCollections.Add(data);
             await _context.SaveChangesAsync();
 
