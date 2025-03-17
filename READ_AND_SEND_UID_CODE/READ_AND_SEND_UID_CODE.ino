@@ -11,7 +11,7 @@
 #ifndef STASSID 
 #define STASSID "OMiLAB"
 #define STAPSK "digifofulbs"
-#define serverUrl "http://localhost:7108/api/data"
+#define serverUrl "http://10.14.10.246:5041/api/data"
 #endif
 
 // Define NTP Client to get time

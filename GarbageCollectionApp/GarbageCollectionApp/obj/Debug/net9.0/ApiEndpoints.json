@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "GarbageCollectionApp.Controllers.GarbageController",
+    "Method": "Post",
+    "RelativePath": "api/data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "GarbageCollectionApp.Models.GarbageCollection",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GarbageCollectionApp.Controllers.GarbageController",
+    "Method": "GetGarbageCollections",
+    "RelativePath": "api/data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
