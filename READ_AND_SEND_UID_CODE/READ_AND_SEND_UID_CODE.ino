@@ -11,7 +11,7 @@
 #ifndef STASSID 
 #define STASSID "OMiLAB"
 #define STAPSK "digifofulbs"
-#define serverUrl "http://localhost:7108/api/data"
+#define serverUrl "http://10.14.10.246:5041/api/data"
 #endif
 
 // Define NTP Client to get time
@@ -49,7 +49,7 @@ void setup() {
   // GMT +8 = 28800
   // GMT -1 = -3600
   // GMT 0 = 0
-  timeClient.setTimeOffset(7200);
+  timeClient.setTimeOffset(0);
 
   while (!Serial);       // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4).
   
