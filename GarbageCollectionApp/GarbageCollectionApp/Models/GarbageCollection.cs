@@ -1,16 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using GarbageCollectionApp.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GarbageCollectionApp.Models
+public class GarbageCollection
 {
-    public class GarbageCollection
-    {
-        [Key]
-        public int Id { get; set; }
+    [Key]
+    public int Id { get; set; }
 
-        [Required]
-        public string IdGarbageBin { get; set; }
+    [Required]
+    public string IdGarbageBin { get; set; }
 
-        [Required]
-        public DateTime CollectionTime { get; set; }
-    }
+    [ForeignKey("IdGarbageBin")]
+    public GarbageBin GarbageBin { get; set; }
+
+    [Required]
+    public DateTime CollectionTime { get; set; }
 }
