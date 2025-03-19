@@ -8,7 +8,7 @@ namespace GarbageCollectionApp.Models
         public int Id { get; set; }
 
         [Required]
-        public string IdGarbageBin { get; set; } = string.Empty;
+        public string IdGarbageBin { get; set; }
 
         [Required]
         public DateTime CollectionTime { get; set; }

@@ -11,7 +11,7 @@
 #ifndef STASSID 
 #define STASSID "OMiLAB"
 #define STAPSK "digifofulbs"
-#define serverUrl "http://10.14.10.246:5041/api/data"
+#define serverUrl "http://10.14.11.134:5041/api/data"
 #endif
 
 // Define NTP Client to get time
@@ -44,11 +44,7 @@ void setup() {
 
   // Initialize a NTPClient to get time
   timeClient.begin();
-  // Set offset time in seconds to adjust for your timezone, for example:
-  // GMT +1 = 3600
-  // GMT +8 = 28800
-  // GMT -1 = -3600
-  // GMT 0 = 0
+
   timeClient.setTimeOffset(0);
 
   while (!Serial);       // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4).
@@ -76,12 +72,10 @@ void loop() {
 		return;
 	}
 
-	// Select one of the cards.
 	if (!mfrc522.PICC_ReadCardSerial()) {
 		return;
 	}
 
-   // Card detected, update last read time
   lastReadTime = millis();  
 
   Serial.print("Card UID: ");
@@ -98,21 +92,44 @@ void loop() {
   }
   Serial.println(uidString);
 
-  //String HolderName = "Darius si Adina";
-  sendUIDToServer(uidString,formattedTime);
+  sendUIDToServer(uidString);
 }
 
-
-void sendUIDToServer(String uid,String datetime) {
+void sendUIDToServer(String uid) {
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
     WiFiClient client;
 
     http.begin(client, serverUrl);
     http.addHeader("Content-Type", "application/json");
-    
-    String jsonPayload = "{\"id\":\"" + uid + "\", \"collectionTime\":\"" + datetime + "\"}";
-    
+
+    timeClient.update();
+
+    unsigned long epochTime = timeClient.getEpochTime();
+
+    Serial.print("Epoch time: ");
+    Serial.println(epochTime);
+
+    if (epochTime < 1000000000) {
+      Serial.println("Epoch time is invalid, something went wrong with time synchronization.");
+      return;
+    }
+
+    int year = 1970 + (epochTime / 31536000);
+    int days = epochTime / 86400;
+    int hours = (epochTime % 86400) / 3600;
+    int minutes = (epochTime % 3600) / 60;
+    int seconds = epochTime % 60;
+
+    char timeBuffer[25];
+    sprintf(timeBuffer, "%04d-%02d-%02dT%02d:%02d:%02dZ", year, 1, 1, hours, minutes, seconds);  // Dummy date for now
+
+    String formattedTime = String(timeBuffer);
+
+    String jsonPayload = "{\"idGarbageBin\":\"" + uid + "\", \"collectionTime\":\"" + formattedTime + "\"}";
+
+    Serial.println("Sending JSON: " + jsonPayload);
+
     int httpResponseCode = http.POST(jsonPayload);
 
     if (httpResponseCode > 0) {
@@ -126,3 +143,7 @@ void sendUIDToServer(String uid,String datetime) {
     Serial.println("WiFi not connected");
   }
 }
+
+
+
+

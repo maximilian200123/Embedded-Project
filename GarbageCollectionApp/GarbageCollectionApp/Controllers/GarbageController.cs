@@ -19,6 +19,8 @@ namespace GarbageCollectionApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] GarbageCollection data)
         {
+            Console.WriteLine($"Received: {data?.IdGarbageBin}, {data?.CollectionTime}");
+
             if (data == null || string.IsNullOrWhiteSpace(data.IdGarbageBin))
                 return BadRequest("Invalid data.");
 
@@ -27,7 +29,8 @@ namespace GarbageCollectionApp.Controllers
 
             return Ok(new { Message = "Data saved successfully." });
         }
-        
+
+
         [HttpGet]
         public async Task<IActionResult> GetGarbageCollections()
         {
