@@ -1,0 +1,18 @@
+﻿@model GarbageCollectionApp.Models.Citizen
+
+<h2>Assign Bin to @Model.FirstName @Model.LastName</h2>
+
+<form method="post">
+    <label for="binId">Select Bin:</label>
+    <select name="binId">
+        @foreach (var bin in ViewBag.Bins as List<GarbageCollectionApp.Models.GarbageBin>)
+        {
+            <option value="@bin.IdGarbageBin">@bin.IdGarbageBin</option>
+        }
+    </select>
+    <br />
+    <label for="address">Address:</label>
+    <input type="text" name="address" required placeholder="Street, number, apartment" />
+    <br />
+    <button type="submit">Assign</button>
+</form>

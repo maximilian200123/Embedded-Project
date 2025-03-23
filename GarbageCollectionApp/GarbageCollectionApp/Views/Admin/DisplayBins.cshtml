@@ -1,0 +1,21 @@
+﻿@model List<GarbageCollectionApp.Models.GarbageBin>
+
+<h2>Manage Bins</h2>
+
+<a href="/Admin/AddBin" class="btn btn-primary">Add New Bin</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var garbageBin in Model)
+        {
+            <tr>
+                <td>@garbageBin.IdGarbageBin</td>
+            </tr>
+        }
+    </tbody>
+</table>

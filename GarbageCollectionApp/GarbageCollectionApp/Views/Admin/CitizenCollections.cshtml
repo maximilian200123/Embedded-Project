@@ -1,0 +1,20 @@
+﻿@{
+    var citizen = ViewBag.Citizen as GarbageCollectionApp.Models.Citizen;
+}
+@model List<GarbageCollectionApp.Models.GarbageCollection>
+
+<h2>Collections for @citizen.FirstName @citizen.LastName</h2>
+
+<table>
+    <tr>
+        <th>Bin ID</th>
+        <th>Collection Time</th>
+    </tr>
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.IdGarbageBin</td>
+            <td>@c.CollectionTime</td>
+        </tr>
+    }
+</table>
