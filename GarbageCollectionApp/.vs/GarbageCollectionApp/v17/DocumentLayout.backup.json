@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\garbagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\garbagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\models\\garbagecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\garbagecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GarbageCollectionApp\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T19:03:01.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GarbageController.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\GarbageController.cs",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\GarbageController.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\GarbageController.cs",
+              "RelativeToolTip": "GarbageCollectionApp\\Controllers\\GarbageController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T18:19:14.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Program.cs",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Program.cs",
+              "RelativeToolTip": "GarbageCollectionApp\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:20:49.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "GarbageCollectionApp\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:19:51.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GarbageCollection.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollection.cs",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\GarbageCollection.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollection.cs",
+              "RelativeToolTip": "GarbageCollectionApp\\Models\\GarbageCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:52:50.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\appsettings.Development.json",
+              "RelativeToolTip": "GarbageCollectionApp\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T17:18:23.173Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
