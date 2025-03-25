@@ -17,8 +17,15 @@ namespace GarbageCollectionApp.Controllers
         // Dashboard
         public IActionResult Index()
         {
+            // check if the user is logged in
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("AdminUsername")))
+            {
+                return RedirectToAction("Login", "Authentication");
+            }
+
             return View();
         }
+
         public async Task<IActionResult> Citizens()
         {
             var citizens = await _context.Citizens.ToListAsync();

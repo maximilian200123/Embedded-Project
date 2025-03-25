@@ -9,6 +9,7 @@ namespace GarbageCollectionApp.Data
         public DbSet<Citizen> Citizens { get; set; }
         public DbSet<GarbageBin> GarbageBins { get; set; }
         public DbSet<GarbageBinCitizen> GarbageBinCitizens { get; set; }
+        public DbSet<Admin> Admins { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
