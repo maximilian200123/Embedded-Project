@@ -11,7 +11,7 @@ namespace GarbageCollectionApp.Models {
         public string IdGarbageBin { get; set; }
 
         [ForeignKey("IdGarbageBin")]
-        public GarbageBin GarbageBin { get; set; }
+        //public GarbageBin GarbageBin { get; set; }
 
         public DateTime CollectionTime { get; set; }
     }

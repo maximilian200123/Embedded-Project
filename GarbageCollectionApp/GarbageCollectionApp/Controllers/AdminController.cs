@@ -136,18 +136,15 @@ namespace GarbageCollectionApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Check if a bin with the same IdGarbageBin already exists
                 var existingBin = _context.GarbageBins
                     .FirstOrDefault(bin => bin.IdGarbageBin == binId);
 
                 if (existingBin != null)
                 {
-                    // If the bin exists, add a validation error
                     ModelState.AddModelError("binId", "A bin with this ID already exists.");
-                    return View();  // Return the view with the error
+                    return View();
                 }
 
-                // If no duplicate, create and add the new bin
                 var newBin = new GarbageBin
                 {
                     IdGarbageBin = binId
@@ -159,7 +156,7 @@ namespace GarbageCollectionApp.Controllers
                 return RedirectToAction("Index");
             }
 
-            return View();  // If model is not valid, just return the view
+            return View();
         }
 
 
@@ -167,7 +164,7 @@ namespace GarbageCollectionApp.Controllers
         [HttpGet]
         public IActionResult AssignBin(int citizenId)
         {
-            var citizen = _context.Citizens.FirstOrDefault(c => c.Id == citizenId);
+            var citizen = _context.Citizens.Find(citizenId);
             if (citizen == null)
             {
                 return NotFound();
@@ -182,12 +179,32 @@ namespace GarbageCollectionApp.Controllers
         [HttpPost]
         public IActionResult AssignBin(int citizenId, string binId, string address)
         {
-            var citizen = _context.Citizens.FirstOrDefault(c => c.Id == citizenId);
-            var bin = _context.GarbageBins.FirstOrDefault(b => b.IdGarbageBin == binId);
+            var citizen = _context.Citizens.Find(citizenId);
+            var bin = _context.GarbageBins.Find(binId);
 
             if (citizen == null || bin == null)
             {
                 return NotFound();
+            }
+
+            var existingAssignment = _context.GarbageBinCitizens
+                .FirstOrDefault(gbc => gbc.IdGarbageBin == binId && gbc.Address == address);
+
+            if (existingAssignment != null)
+            {
+                ModelState.AddModelError("", "This bin is already assigned to another citizen at this address.");
+                ViewBag.Bins = _context.GarbageBins.ToList();
+                return View(citizen);
+            }
+
+            var existingCitizenAssignment = _context.GarbageBinCitizens
+                .FirstOrDefault(gbc => gbc.IdCitizen == citizenId && gbc.Address == address);
+
+            if (existingCitizenAssignment != null)
+            {
+                ModelState.AddModelError("", "This citizen already has a bin assigned to this address.");
+                ViewBag.Bins = _context.GarbageBins.ToList();
+                return View(citizen);
             }
 
             var garbageBinCitizen = new GarbageBinCitizen
@@ -201,6 +218,34 @@ namespace GarbageCollectionApp.Controllers
             _context.SaveChanges();
 
             return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> CitizenCollections()
+        {
+            // gets the data into anonymous type
+            var collectionsRaw = await _context.GarbageCollections
+                .Select(gc => new
+                {
+                    gc.IdGarbageBin,
+                    gc.CollectionTime,
+                    Citizen = _context.GarbageBinCitizens
+                        .Where(gbc => gbc.IdGarbageBin == gc.IdGarbageBin)
+                        .Select(gbc => new { gbc.Citizen.Id, gbc.Citizen.FirstName, gbc.Citizen.LastName })
+                        .FirstOrDefault()
+                })
+                .ToListAsync();
+
+            // Using the DTO to map the anonymous  type received from the first query into the desired format
+            var collections = collectionsRaw.Select(c => new GarbageCollectionDTO
+            {
+                IdGarbageBin = c.IdGarbageBin,
+                CollectionTime = c.CollectionTime,
+                CitizenId = c.Citizen?.Id ?? 0, // Handle null values
+                CitizenFirstName = c.Citizen?.FirstName ?? "Unknown",
+                CitizenLastName = c.Citizen?.LastName ?? "Unknown"
+            }).ToList();
+
+            return View(collections);
         }
 
     }

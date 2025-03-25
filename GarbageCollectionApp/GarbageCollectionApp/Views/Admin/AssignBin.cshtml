@@ -3,16 +3,34 @@
 <h2>Assign Bin to @Model.FirstName @Model.LastName</h2>
 
 <form method="post">
-    <label for="binId">Select Bin:</label>
-    <select name="binId">
-        @foreach (var bin in ViewBag.Bins as List<GarbageCollectionApp.Models.GarbageBin>)
-        {
-            <option value="@bin.IdGarbageBin">@bin.IdGarbageBin</option>
-        }
-    </select>
-    <br />
-    <label for="address">Address:</label>
-    <input type="text" name="address" required placeholder="Street, number, apartment" />
-    <br />
-    <button type="submit">Assign</button>
+
+    <div class="form-group">
+        <label for="binId">Select Bin:</label>
+        <select name="binId" id="binId" class="form-control">
+            @foreach (var bin in ViewBag.Bins as List<GarbageCollectionApp.Models.GarbageBin>)
+            {
+                <option value="@bin.IdGarbageBin">@bin.IdGarbageBin</option>
+            }
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" class="form-control" required placeholder="Street, number, apartment" />
+    </div>
+
+
+    @if (ViewData.ModelState != null && ViewData.ModelState.Count > 0)
+    {
+        <div class="text-danger">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <p>@error.ErrorMessage</p>
+            }
+        </div>
+    }
+
+
+    <button type="submit" class="btn btn-primary">Assign</button>
 </form>
