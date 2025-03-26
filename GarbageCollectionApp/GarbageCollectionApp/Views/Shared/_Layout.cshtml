@@ -27,8 +27,15 @@
                         {
                             <a class="nav-link" href="/Authentication/Login">Admin Login</a>
                         }
-
                     </li>
+
+                    <li class="nav-item">
+                        @if (Context.Session.GetString("AdminUsername") != null)
+                        {
+                            <a class="nav-link" href="/Admin/Index">Dashboard</a>
+                        }
+                    </li>
+
                 </ul>
             </div>
         </nav>

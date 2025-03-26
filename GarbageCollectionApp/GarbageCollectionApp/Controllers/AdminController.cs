@@ -1,6 +1,7 @@
 ﻿using GarbageCollectionApp.Data;
 using GarbageCollectionApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace GarbageCollectionApp.Controllers
@@ -194,22 +195,23 @@ namespace GarbageCollectionApp.Controllers
                 return NotFound();
             }
 
-            var existingAssignment = _context.GarbageBinCitizens
-                .FirstOrDefault(gbc => gbc.IdGarbageBin == binId && gbc.Address == address);
+            string normalizedAddress = address.Trim().ToLower();
 
-            if (existingAssignment != null)
+            // Check if the bin is already assigned to a different citizen
+            var existingAssignment = _context.GarbageBinCitizens
+                .FirstOrDefault(gbc => gbc.IdGarbageBin == binId);
+
+            if (existingAssignment != null && existingAssignment.IdCitizen != citizenId)
             {
-                ModelState.AddModelError("", "This bin is already assigned to another citizen at this address.");
+                ModelState.AddModelError("", "This bin is already assigned to another citizen.");
                 ViewBag.Bins = _context.GarbageBins.ToList();
                 return View(citizen);
             }
 
-            var existingCitizenAssignment = _context.GarbageBinCitizens
-                .FirstOrDefault(gbc => gbc.IdCitizen == citizenId && gbc.Address == address);
-
-            if (existingCitizenAssignment != null)
+            // Check if the bin is already assigned at a different address
+            if (existingAssignment != null && existingAssignment.Address.ToLower() != normalizedAddress)
             {
-                ModelState.AddModelError("", "This citizen already has a bin assigned to this address.");
+                ModelState.AddModelError("", "This bin is already assigned at a different address.");
                 ViewBag.Bins = _context.GarbageBins.ToList();
                 return View(citizen);
             }
@@ -218,7 +220,7 @@ namespace GarbageCollectionApp.Controllers
             {
                 IdCitizen = citizenId,
                 IdGarbageBin = binId,
-                Address = address
+                Address = address.Trim()
             };
 
             _context.GarbageBinCitizens.Add(garbageBinCitizen);
@@ -227,33 +229,53 @@ namespace GarbageCollectionApp.Controllers
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> CitizenCollections()
+
+        public async Task<IActionResult> CitizenCollections(int? citizenId)
         {
-            // gets the data into anonymous type
+            // Retrieving the list of citizens for selection
+            var citizens = await _context.Citizens
+            .Select(c => new
+            {
+                c.Id,
+                FullName = c.FirstName + " " + c.LastName
+            })
+            .ToListAsync();
+
+            ViewBag.Citizens = new SelectList(citizens, "Id", "FullName");
+
+            if (citizenId == null)
+            {
+                return View(new List<GarbageCollectionDTO>());
+            }
+
+            // Getting the data for the selected citizen
             var collectionsRaw = await _context.GarbageCollections
+                .Where(gc => _context.GarbageBinCitizens
+                    .Any(gbc => gbc.IdGarbageBin == gc.IdGarbageBin && gbc.Citizen.Id == citizenId))
                 .Select(gc => new
                 {
                     gc.IdGarbageBin,
                     gc.CollectionTime,
                     Citizen = _context.GarbageBinCitizens
-                        .Where(gbc => gbc.IdGarbageBin == gc.IdGarbageBin)
+                        .Where(gbc => gbc.IdGarbageBin == gc.IdGarbageBin && gbc.Citizen.Id == citizenId)
                         .Select(gbc => new { gbc.Citizen.Id, gbc.Citizen.FirstName, gbc.Citizen.LastName })
                         .FirstOrDefault()
                 })
                 .ToListAsync();
 
-            // Using the DTO to map the anonymous  type received from the first query into the desired format
+            //Assigning the anonymous data got from the first query into the DTO
             var collections = collectionsRaw.Select(c => new GarbageCollectionDTO
             {
                 IdGarbageBin = c.IdGarbageBin,
                 CollectionTime = c.CollectionTime,
-                CitizenId = c.Citizen?.Id ?? 0, // Handle null values
+                CitizenId = c.Citizen?.Id ?? 0,
                 CitizenFirstName = c.Citizen?.FirstName ?? "Unknown",
                 CitizenLastName = c.Citizen?.LastName ?? "Unknown"
             }).ToList();
 
             return View(collections);
         }
+
 
     }
 }
