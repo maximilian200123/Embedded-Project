@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
 
 namespace GarbageCollectionApp.Models
 {
@@ -11,6 +12,5 @@ namespace GarbageCollectionApp.Models
         public string Email { get; set; }
         public string Cnp { get; set; }
 
-        public ICollection<GarbageBinCitizen> GarbageBinCitizens { get; set; }
     }
 }

@@ -1,0 +1,35 @@
+﻿@model List<GarbageCollectionApp.Models.Citizen>
+
+<h2>Manage Citizens</h2>
+
+<a href="/Admin/AddCitizen" class="btn btn-primary">Add New Citizen</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>CNP</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var citizen in Model)
+        {
+            <tr>
+                <td>@citizen.Id</td>
+                <td>@citizen.FirstName</td>
+                <td>@citizen.LastName</td>
+                <td>@citizen.Email</td>
+                <td>@citizen.Cnp</td>
+                <td>
+                    <a href="/Admin/EditCitizen/@citizen.Id" class="btn btn-warning">Edit</a>
+                    <a href="/Admin/DeleteCitizen/@citizen.Id" class="btn btn-danger">Delete</a>
+                    <a href="/Admin/AssignBin?citizenId=@citizen.Id" class="btn btn-primary">Assign Bin</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

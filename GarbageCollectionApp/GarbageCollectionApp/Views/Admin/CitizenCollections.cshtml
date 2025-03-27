@@ -1,0 +1,32 @@
+﻿@model List<GarbageCollectionApp.Models.GarbageCollectionDTO>
+
+<h2>Garbage Collection Records</h2>
+
+<form method="get">
+    <label for="citizen">Select Citizen:</label>
+    <select id="citizen" name="citizenId" asp-items="ViewBag.Citizens">
+        <option value="">-- Select a Citizen --</option>
+    </select>
+    <button type="submit">Search</button>
+</form>
+
+@if (Model.Any())
+{
+    <table>
+        <tr>
+            <th>Bin ID</th>
+            <th>Collection Time</th>
+        </tr>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.IdGarbageBin</td>
+                <td>@c.CollectionTime</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>No collection records found for the selected citizen.</p>
+}

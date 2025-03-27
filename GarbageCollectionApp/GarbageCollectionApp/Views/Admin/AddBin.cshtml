@@ -1,0 +1,20 @@
+﻿@model GarbageCollectionApp.Models.GarbageBin
+
+<h2>Add New Garbage Bin</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="IdGarbageBin">Bin ID:</label>
+        <input type="text" id="IdGarbageBin" name="binId" class="form-control" required />
+
+        @if (ViewData.ModelState.ContainsKey("binId") && ViewData.ModelState["binId"].Errors.Any())
+        {
+            <span class="text-danger">
+                @ViewData.ModelState["binId"].Errors.FirstOrDefault()?.ErrorMessage
+            </span>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Bin</button>
+</form>
+
