@@ -28,4 +28,19 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+    [HttpGet]
+    public IActionResult Login()
+    {
+        return View();
+    }
+
+    
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Login(string username, string password)
+    {
+     
+        // if login is successful, redirect to the Admin dashboard
+        return RedirectToAction("Index", "Admin");
+    }
 }

@@ -3,6 +3,7 @@ using System;
 using GarbageCollectionApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GarbageCollectionApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250325220529_AddChangeToGarbageBinCitizen")]
+    partial class AddChangeToGarbageBinCitizen
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
@@ -98,22 +101,12 @@ namespace GarbageCollectionApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<DateTime>("CollectionTime")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("IdGarbageBin")
                         .IsRequired()
                         .HasColumnType("TEXT");
-
-                    b.Property<float>("Latitude")
-                        .HasColumnType("REAL");
-
-                    b.Property<float>("Longitude")
-                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 

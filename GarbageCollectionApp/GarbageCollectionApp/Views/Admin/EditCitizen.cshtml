@@ -1,0 +1,28 @@
+﻿@model GarbageCollectionApp.Models.Citizen
+
+<h2>Edit Citizen</h2>
+
+<form asp-action="EditCitizen" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input type="text" class="form-control" id="FirstName" name="FirstName" value="@Model.FirstName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastName" name="LastName" value="@Model.LastName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Cnp">CNP</label>
+        <input type="text" class="form-control" id="Cnp" name="Cnp" value="@Model.Cnp" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Citizen</button>
+</form>
