@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\migrations\\20250312181640_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\migrations\\20250312181640_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\migrations\\20250319161320_addgarbagestructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\migrations\\20250319161320_addgarbagestructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\migrations\\20250327093918_addchangetogarbagecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\migrations\\20250327093918_addchangetogarbagecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -99,19 +107,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20250312181640_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Migrations\\20250312181640_InitialCreate.cs",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Migrations\\20250312181640_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Migrations\\20250312181640_InitialCreate.cs",
+              "RelativeToolTip": "GarbageCollectionApp\\Migrations\\20250312181640_InitialCreate.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:33:23.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250319161320_AddGarbageStructure.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Migrations\\20250319161320_AddGarbageStructure.cs",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Migrations\\20250319161320_AddGarbageStructure.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Migrations\\20250319161320_AddGarbageStructure.cs",
+              "RelativeToolTip": "GarbageCollectionApp\\Migrations\\20250319161320_AddGarbageStructure.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:32:45.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "20250327093918_AddChangeToGarbageCollection.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Migrations\\20250327093918_AddChangeToGarbageCollection.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Migrations\\20250327093918_AddChangeToGarbageCollection.cs",
               "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Migrations\\20250327093918_AddChangeToGarbageCollection.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Migrations\\20250327093918_AddChangeToGarbageCollection.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T09:39:25.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "20250325220529_AddChangeToGarbageBinCitizen.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Migrations\\20250325220529_AddChangeToGarbageBinCitizen.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Migrations\\20250325220529_AddChangeToGarbageBinCitizen.cs",
@@ -119,12 +153,11 @@
               "RelativeToolTip": "GarbageCollectionApp\\Migrations\\20250325220529_AddChangeToGarbageBinCitizen.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:37:07.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:37:07.173Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
@@ -132,12 +165,11 @@
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T17:22:30.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:22:30.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DisplayBins.cshtml",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
@@ -145,12 +177,11 @@
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-23T18:41:15.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T18:41:15.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\AdminController.cs",
@@ -158,12 +189,11 @@
               "RelativeToolTip": "GarbageCollectionApp\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAOcAAAAAAAAAAAAAwPUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:17:47.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T16:17:47.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Program.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Program.cs",
@@ -175,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GarbageCollection.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollection.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\GarbageCollection.cs",
@@ -183,12 +213,11 @@
               "RelativeToolTip": "GarbageCollectionApp\\Models\\GarbageCollection.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:52:50.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T17:52:50.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "GarbageCollectionDTO.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollectionDTO.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\GarbageCollectionDTO.cs",
@@ -200,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "GarbageController.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\GarbageController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\GarbageController.cs",
@@ -212,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Shared\\_Layout.cshtml",
@@ -224,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "EditCitizen.cshtml",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\EditCitizen.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\EditCitizen.cshtml",
@@ -236,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "AssignBin.cshtml",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AssignBin.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\AssignBin.cshtml",
@@ -248,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\AuthenticationController.cs",
@@ -260,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\HomeController.cs",
@@ -272,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\Admin.cs",
@@ -284,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "GarbageBin.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageBin.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\GarbageBin.cs",
@@ -296,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Citizen.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Citizen.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\Citizen.cs",
@@ -308,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "AddBin.cshtml",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AddBin.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\AddBin.cshtml",
@@ -320,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CitizenCollections.cshtml",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\CitizenCollections.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\CitizenCollections.cshtml",
