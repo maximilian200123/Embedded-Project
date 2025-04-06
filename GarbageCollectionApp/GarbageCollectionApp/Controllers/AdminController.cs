@@ -276,6 +276,28 @@ namespace GarbageCollectionApp.Controllers
             return View(collections);
         }
 
+        public async Task<IActionResult> CollectionMap(DateTime? selectedDate)
+        {
+            if (!selectedDate.HasValue)
+            {
+                selectedDate = DateTime.Today;
+            }
 
+            var collections = await _context.GarbageCollections
+                .Where(gc => gc.CollectionTime.Date == selectedDate.Value.Date)
+                .OrderBy(gc => gc.CollectionTime)
+                .Select(gc => new
+                {
+                    gc.IdGarbageBin,
+                    CollectionTime = gc.CollectionTime.ToString("o"),
+                    gc.Address,
+                    gc.Latitude,
+                    gc.Longitude
+                })
+                .ToListAsync();
+
+            ViewBag.SelectedDate = selectedDate.Value.ToString("yyyy-MM-dd");
+            return View(collections);
+        }
     }
 }

@@ -1,0 +1,192 @@
+﻿@model IEnumerable<dynamic>
+@{
+    ViewData["Title"] = "Collection Route";
+}
+
+<h2>Collection Route</h2>
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <form asp-action="CollectionMap" method="get">
+            <div class="form-group">
+                <label for="selectedDate" class="control-label">Select Date:</label>
+                <input type="date" id="selectedDate" name="selectedDate"
+                       value="@ViewBag.SelectedDate" class="form-control" />
+                <input type="submit" value="Show Route" class="btn btn-primary mt-2" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="map" style="height: 600px; width: 100%;"></div>
+<div class="mt-3">
+    <button id="animateRoute" class="btn btn-success">Animate Route</button>
+    <button id="resetView" class="btn btn-secondary ml-2">Reset View</button>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const map = L.map('map').setView([45.9432, 24.9668], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Parse and sort collection points by time
+            const collectionPoints = [
+        @foreach (var item in Model)
+        {
+            var lat = item.Latitude is string ? decimal.Parse(item.Latitude.ToString().Replace(',', '.')) : item.Latitude;
+            var lng = item.Longitude is string ? decimal.Parse(item.Longitude.ToString().Replace(',', '.')) : item.Longitude;
+            var collectionTime = item.CollectionTime is DateTime ? (DateTime)item.CollectionTime : DateTime.Parse(item.CollectionTime.ToString());
+            <text>
+                        {
+                            binId: '@item.IdGarbageBin',
+                            time: '@collectionTime.ToString("yyyy-MM-ddTHH:mm:ss")',
+                            address: '@Html.Raw(item.Address.Replace("'", "\\'"))',
+                            lat: @lat.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                            lng: @lng.ToString(System.Globalization.CultureInfo.InvariantCulture),
+                            timestamp: new Date('@collectionTime.ToString("yyyy-MM-ddTHH:mm:ss")').getTime()
+                        },
+            </text>
+        }
+            ].sort((a, b) => a.timestamp - b.timestamp);
+
+            const markers = [];
+            const routeSegments = [];
+            let previousPoint = null;
+
+            collectionPoints.forEach((point, index) => {
+                if (typeof point.lat === 'number' && typeof point.lng === 'number') {
+                    // Create marker with sequence number
+                    const marker = L.marker([point.lat, point.lng]).addTo(map);
+                    const sequenceNumber = L.divIcon({
+                        html: `<div style="
+                            background: #1976d2;
+                            color: white;
+                            border-radius: 50%;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: bold;
+                            border: 2px solid white;
+                        ">${index + 1}</div>`,
+                        className: 'sequence-marker',
+                        iconSize: [24, 24]
+                    });
+
+                    L.marker([point.lat, point.lng], {icon: sequenceNumber}).addTo(map);
+
+                    // Format the date properly
+                    const dateObj = new Date(point.time);
+                    const formattedTime = isNaN(dateObj.getTime()) ?
+                        'Time not available' :
+                        dateObj.toLocaleString('en-US', {
+                            weekday: 'short',
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric',
+                            hour: '2-digit',
+                            minute: '2-digit'
+                        });
+
+                    marker.bindPopup(`
+                        <b>Stop #${index + 1}</b><br>
+                        <b>Bin ID:</b> ${point.binId}<br>
+                        <b>Time:</b> ${formattedTime}<br>
+                        <b>Address:</b> ${point.address}
+                    `);
+                    markers.push(marker);
+
+                    // Create line segment if we have a previous point
+                    if (previousPoint) {
+                        const segment = L.polyline(
+                            [[previousPoint.lat, previousPoint.lng], [point.lat, point.lng]],
+                            {color: '#1976d2', weight: 4, opacity: 0.7}
+                        ).addTo(map);
+                        routeSegments.push(segment);
+                    }
+
+                    previousPoint = point;
+                }
+            });
+
+            // Fit map to show all markers and segments
+            if (markers.length > 0) {
+                const bounds = L.latLngBounds(markers.map(m => m.getLatLng()));
+                map.fitBounds(bounds.pad(0.2));
+            }
+
+            // Route animation
+            let animationInterval;
+            document.getElementById('animateRoute').addEventListener('click', function() {
+                
+                clearInterval(animationInterval);
+
+                routeSegments.forEach(segment => {
+                    segment.setStyle({color: '#1976d2', weight: 4, opacity: 0.7});
+                });
+
+                markers.forEach(marker => {
+                    marker.closePopup();
+                });
+
+                // Start animation
+                let currentSegment = 0;
+                const animateStep = function() {
+                    if (currentSegment < routeSegments.length) {
+
+                        routeSegments[currentSegment].setStyle({color: 'orange', weight: 6, opacity: 1});
+
+                        markers[currentSegment + 1].openPopup();
+
+                        const segmentBounds = routeSegments[currentSegment].getBounds();
+                        map.flyToBounds(segmentBounds, {padding: [50, 50], duration: 1});
+
+                        currentSegment++;
+                    } else {
+                        clearInterval(animationInterval);
+                    }
+                };
+
+                if (markers.length > 0) {
+                    markers[0].openPopup();
+                    map.flyTo(markers[0].getLatLng(), 16, {duration: 1});
+                }
+
+                animationInterval = setInterval(animateStep, 2000);
+            });
+
+            // Reset view button
+            document.getElementById('resetView').addEventListener('click', function() {
+                clearInterval(animationInterval);
+                if (markers.length > 0) {
+                    const bounds = L.latLngBounds(markers.map(m => m.getLatLng()));
+                    map.fitBounds(bounds.pad(0.2));
+                }
+
+                routeSegments.forEach(segment => {
+                    segment.setStyle({color: '#1976d2', weight: 4, opacity: 0.7});
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .sequence-marker {
+            background: transparent;
+            border: none;
+        }
+    </style>
+}
