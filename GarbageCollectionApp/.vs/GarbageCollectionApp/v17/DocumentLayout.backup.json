@@ -1,77 +1,81 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\collectionmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\collectionmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\views\\map\\collectionmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\map\\collectionmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\models\\garbagecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\garbagecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\models\\garbagecollectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\garbagecollectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\assignbin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\assignbin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\controllers\\garbagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\garbagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\citizencollections.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\citizencollections.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\displaybins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\displaybins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\editcitizen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\editcitizen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\models\\garbagecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\garbagecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\garbagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\garbagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\models\\garbagecollectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\garbagecollectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\assignbin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\assignbin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\citizencollections.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\citizencollections.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\displaybins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\displaybins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\editcitizen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\editcitizen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\models\\garbagebin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\models\\garbagebin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\garbagebin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\citizen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\corma\\desktop\\school stuff\\arduino\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\addbin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\views\\admin\\addbin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\admin\\addbin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -82,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,51 +98,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CollectionMap.cshtml",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\CollectionMap.cshtml",
-              "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\CollectionMap.cshtml",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\CollectionMap.cshtml",
-              "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\CollectionMap.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAApAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Map\\CollectionMap.cshtml",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Map\\CollectionMap.cshtml",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Map\\CollectionMap.cshtml",
+              "RelativeToolTip": "GarbageCollectionApp\\Views\\Map\\CollectionMap.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-02T16:14:22.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-26T17:22:30.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DisplayBins.cshtml",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
-              "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
-              "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-23T18:41:15.542Z"
+              "DocumentIndex": 0,
+              "Title": "MapController.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\MapController.cs",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\MapController.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\MapController.cs*",
+              "RelativeToolTip": "GarbageCollectionApp\\Controllers\\MapController.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T18:16:58.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AdminController.cs*",
-              "RelativeToolTip": "GarbageCollectionApp\\Controllers\\AdminController.cs*",
-              "ViewState": "AgIAAA0BAAAAAAAAAAAAABcBAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "GarbageCollectionApp\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T16:17:47.93Z",
               "EditorCaption": ""
@@ -146,22 +151,35 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Program.cs",
-              "RelativeDocumentMoniker": "GarbageCollectionApp\\Program.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Program.cs",
-              "RelativeToolTip": "GarbageCollectionApp\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:20:49.606Z"
+              "Title": "DisplayBins.cshtml",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
+              "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\DisplayBins.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T18:41:15.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Program.cs",
+              "RelativeDocumentMoniker": "GarbageCollectionApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Program.cs",
+              "RelativeToolTip": "GarbageCollectionApp\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:20:49.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GarbageCollection.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollection.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollection.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\GarbageCollection.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollection.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollection.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Models\\GarbageCollection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -170,50 +188,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "GarbageCollectionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollectionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollectionDTO.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\GarbageCollectionDTO.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollectionDTO.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageCollectionDTO.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Models\\GarbageCollectionDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T17:01:45.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T17:01:45.397Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "GarbageController.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\GarbageController.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\GarbageController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\GarbageController.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\GarbageController.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\GarbageController.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Controllers\\GarbageController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T18:19:14.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T18:19:14.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T17:22:53.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:22:53.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "EditCitizen.cshtml",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\EditCitizen.cshtml",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\EditCitizen.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\EditCitizen.cshtml",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\EditCitizen.cshtml",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\EditCitizen.cshtml",
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\EditCitizen.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -221,24 +236,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "AssignBin.cshtml",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AssignBin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AssignBin.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\AssignBin.cshtml",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AssignBin.cshtml",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AssignBin.cshtml",
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\AssignBin.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-23T18:25:51.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T18:25:51.715Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Controllers\\AuthenticationController.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAkwAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -246,11 +260,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAkwAQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -258,24 +272,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Admin.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Models\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T20:27:44.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T20:27:44.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "GarbageBin.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageBin.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageBin.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\GarbageBin.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageBin.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\GarbageBin.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Models\\GarbageBin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -283,11 +296,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Citizen.cs",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Citizen.cs",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Citizen.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\Citizen.cs",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Citizen.cs",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Citizen.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Models\\Citizen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -295,11 +308,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AddBin.cshtml",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AddBin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AddBin.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\AddBin.cshtml",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AddBin.cshtml",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\AddBin.cshtml",
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\AddBin.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -307,16 +320,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "CitizenCollections.cshtml",
-              "DocumentMoniker": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\CitizenCollections.cshtml",
+              "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\CitizenCollections.cshtml",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Admin\\CitizenCollections.cshtml",
-              "ToolTip": "C:\\Users\\corma\\Desktop\\School stuff\\Arduino\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\CitizenCollections.cshtml",
+              "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Admin\\CitizenCollections.cshtml",
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Admin\\CitizenCollections.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-23T16:29:39.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T16:29:39.124Z"
             }
           ]
         }

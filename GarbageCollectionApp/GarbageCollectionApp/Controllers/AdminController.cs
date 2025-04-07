@@ -276,28 +276,32 @@ namespace GarbageCollectionApp.Controllers
             return View(collections);
         }
 
-        public async Task<IActionResult> CollectionMap(DateTime? selectedDate)
-        {
-            if (!selectedDate.HasValue)
-            {
-                selectedDate = DateTime.Today;
-            }
+        //public async Task<IActionResult> CollectionMap(DateTime? selectedDate)
+        //{
+        //    // Set default to 15.10.2024
+        //    var queryDate = selectedDate ?? new DateTime(2024, 10, 15);
 
-            var collections = await _context.GarbageCollections
-                .Where(gc => gc.CollectionTime.Date == selectedDate.Value.Date)
-                .OrderBy(gc => gc.CollectionTime)
-                .Select(gc => new
-                {
-                    gc.IdGarbageBin,
-                    CollectionTime = gc.CollectionTime.ToString("o"),
-                    gc.Address,
-                    gc.Latitude,
-                    gc.Longitude
-                })
-                .ToListAsync();
+        //    var collections = await _context.GarbageCollections
+        //        .Where(gc => gc.CollectionTime.Date == queryDate.Date)
+        //        .OrderBy(gc => gc.CollectionTime)
+        //        .Select(gc => new
+        //        {
+        //            gc.IdGarbageBin,
+        //            CollectionTime = gc.CollectionTime.ToString("o"),
+        //            gc.Address,
+        //            gc.Latitude,
+        //            gc.Longitude
+        //        })
+        //        .ToListAsync();
 
-            ViewBag.SelectedDate = selectedDate.Value.ToString("yyyy-MM-dd");
-            return View(collections);
-        }
+        //    ViewBag.Stops = new
+        //    {
+        //        StartPoint = new { Name = "SOMA HQ", Address = "Strada Șelimbărului 90, Cisnădie, Romania", Lat = 45.7315361, Lng = 24.1779393 },
+        //        FinishPoint = new { Name = "Groapa de gunoi  Cristian", Address = "DN1 FN, Cristian 557085", Lat = 45.7877059, Lng = 24.0247875 }
+        //    };
+
+        //    ViewBag.SelectedDate = queryDate.ToString("yyyy-MM-dd");
+        //    return View(collections);
+        //}
     }
 }

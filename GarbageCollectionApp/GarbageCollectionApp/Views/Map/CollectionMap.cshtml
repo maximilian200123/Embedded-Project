@@ -30,18 +30,52 @@
           crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""></script>
+            crossorigin="">
+    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            
-            const map = L.map('map').setView([45.9432, 24.9668], 13);
-
+            const map = L.map('map');
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
 
-            // Parse and sort collection points by time
+            // Get start/finish locations
+            const stops = @Html.Raw(Json.Serialize(ViewBag.Stops));
+
+            // Function for markers, for different colors
+            const createMarkerIcon = (color, content = '') => L.divIcon({
+                html: `<div style="
+                    background: ${color};
+                    color: white;
+                    border-radius: 50%;
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                    border: 2px solid white;
+                    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+                ">${content}</div>`,
+                className: '',
+                iconSize: [24, 24]
+            });
+
+
+            // Start marker
+             const startMarker = L.marker(
+                [stops.startPoint.lat, stops.startPoint.lng],
+                { icon: createMarkerIcon('#e74c3c') }
+            ).addTo(map).bindPopup(`
+                <b>START:</b> ${stops.startPoint.name}<br>
+                <b>Address:</b> ${stops.startPoint.address}<br>
+                <b>Coordinates:</b> ${stops.startPoint.lat}, ${stops.startPoint.lng}
+            `);
+
+
+            // Collection points
+            const collectionMarkers = [];
             const collectionPoints = [
         @foreach (var item in Model)
         {
@@ -61,38 +95,18 @@
         }
             ].sort((a, b) => a.timestamp - b.timestamp);
 
-            const markers = [];
-            const routeSegments = [];
-            let previousPoint = null;
-
             collectionPoints.forEach((point, index) => {
                 if (typeof point.lat === 'number' && typeof point.lng === 'number') {
-                    // Create marker with sequence number
                     const marker = L.marker([point.lat, point.lng]).addTo(map);
-                    const sequenceNumber = L.divIcon({
-                        html: `<div style="
-                            background: #1976d2;
-                            color: white;
-                            border-radius: 50%;
-                            width: 24px;
-                            height: 24px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-weight: bold;
-                            border: 2px solid white;
-                        ">${index + 1}</div>`,
-                        className: 'sequence-marker',
-                        iconSize: [24, 24]
-                    });
 
-                    L.marker([point.lat, point.lng], {icon: sequenceNumber}).addTo(map);
+                    L.marker([point.lat, point.lng], {
+                        icon: createMarkerIcon('#1976d2', index + 1)
+                    }).addTo(map);
 
-                    // Format the date properly
                     const dateObj = new Date(point.time);
-                    const formattedTime = isNaN(dateObj.getTime()) ?
-                        'Time not available' :
-                        dateObj.toLocaleString('en-US', {
+                    const formattedTime = isNaN(dateObj.getTime())
+                        ? 'Time not available'
+                        : dateObj.toLocaleString('en-US', {
                             weekday: 'short',
                             year: 'numeric',
                             month: 'short',
@@ -107,78 +121,65 @@
                         <b>Time:</b> ${formattedTime}<br>
                         <b>Address:</b> ${point.address}
                     `);
-                    markers.push(marker);
-
-                    // Create line segment if we have a previous point
-                    if (previousPoint) {
-                        const segment = L.polyline(
-                            [[previousPoint.lat, previousPoint.lng], [point.lat, point.lng]],
-                            {color: '#1976d2', weight: 4, opacity: 0.7}
-                        ).addTo(map);
-                        routeSegments.push(segment);
-                    }
-
-                    previousPoint = point;
+                    collectionMarkers.push(marker);
                 }
             });
 
-            // Fit map to show all markers and segments
-            if (markers.length > 0) {
-                const bounds = L.latLngBounds(markers.map(m => m.getLatLng()));
+            // Finish marker
+            const finishMarker = L.marker(
+                [stops.finishPoint.lat, stops.finishPoint.lng],
+                { icon: createMarkerIcon('#e74c3c') }
+            ).addTo(map).bindPopup(`
+                <b>FINISH:</b> ${stops.finishPoint.name}<br>
+                <b>Address:</b> ${stops.finishPoint.address}<br>
+                <b>Coordinates:</b> ${stops.finishPoint.lat}, ${stops.finishPoint.lng}
+            `);
+
+            // Combine all markers in order
+            const allMarkers = [startMarker, ...collectionMarkers, finishMarker];
+
+            // Fit map to show all markers
+            if (allMarkers.length > 0) {
+                const bounds = L.latLngBounds(allMarkers.map(m => m.getLatLng()));
                 map.fitBounds(bounds.pad(0.2));
             }
 
-            // Route animation
+            // Animation using allMarkers
             let animationInterval;
             document.getElementById('animateRoute').addEventListener('click', function() {
-                
                 clearInterval(animationInterval);
 
-                routeSegments.forEach(segment => {
-                    segment.setStyle({color: '#1976d2', weight: 4, opacity: 0.7});
-                });
-
-                markers.forEach(marker => {
+                allMarkers.forEach(marker => {
                     marker.closePopup();
                 });
 
-                // Start animation
-                let currentSegment = 0;
+                let currentMarker = 0;
                 const animateStep = function() {
-                    if (currentSegment < routeSegments.length) {
-
-                        routeSegments[currentSegment].setStyle({color: 'orange', weight: 6, opacity: 1});
-
-                        markers[currentSegment + 1].openPopup();
-
-                        const segmentBounds = routeSegments[currentSegment].getBounds();
-                        map.flyToBounds(segmentBounds, {padding: [50, 50], duration: 1});
-
-                        currentSegment++;
+                    if (currentMarker < allMarkers.length) {
+                        allMarkers[currentMarker].openPopup();
+                        map.flyTo(allMarkers[currentMarker].getLatLng(), 16, {duration: 1});
+                        currentMarker++;
                     } else {
                         clearInterval(animationInterval);
                     }
                 };
 
-                if (markers.length > 0) {
-                    markers[0].openPopup();
-                    map.flyTo(markers[0].getLatLng(), 16, {duration: 1});
+                if (allMarkers.length > 0) {
+                    allMarkers[0].openPopup();
+                    map.flyTo(allMarkers[0].getLatLng(), 16, {duration: 1});
+                    currentMarker = 1;
+                    animationInterval = setInterval(animateStep, 2000);
                 }
-
-                animationInterval = setInterval(animateStep, 2000);
             });
 
-            // Reset view button
+            // Reset button
             document.getElementById('resetView').addEventListener('click', function() {
                 clearInterval(animationInterval);
-                if (markers.length > 0) {
-                    const bounds = L.latLngBounds(markers.map(m => m.getLatLng()));
+                if (allMarkers.length > 0) {
+                    const bounds = L.latLngBounds(allMarkers.map(m => m.getLatLng()));
                     map.fitBounds(bounds.pad(0.2));
+                    allMarkers.forEach(marker => marker.closePopup());
                 }
-
-                routeSegments.forEach(segment => {
-                    segment.setStyle({color: '#1976d2', weight: 4, opacity: 0.7});
-                });
             });
         });
     </script>
