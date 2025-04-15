@@ -1,4 +1,5 @@
 using GarbageCollectionApp.Data;
+using GarbageCollectionApp.Services;
 using Microsoft.EntityFrameworkCore;
 using static GarbageCollectionApp.Data.AppDbContext;
 
@@ -17,6 +18,7 @@ builder.Services.AddSession(options =>
 });
 builder.Services.AddHttpContextAccessor();
 // Add services to the container.
+builder.Services.AddHttpClient<MapboxService>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();
 
