@@ -9,6 +9,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.WebHost.UseUrls("http://0.0.0.0:5041");
 
+
 // for session
 builder.Services.AddSession(options =>
 {
@@ -18,9 +19,11 @@ builder.Services.AddSession(options =>
 });
 builder.Services.AddHttpContextAccessor();
 // Add services to the container.
-builder.Services.AddHttpClient<MapboxService>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();
+
+//for matrix optimization
+builder.Services.AddSingleton<LoadMatrixService>();
 
 var app = builder.Build();
 
