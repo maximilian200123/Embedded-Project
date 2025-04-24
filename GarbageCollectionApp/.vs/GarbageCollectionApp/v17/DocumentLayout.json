@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\views\\map\\collectionmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\models\\coordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\coordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\routecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\routecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\models\\coordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\models\\coordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|solutionrelative:garbagecollectionapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8213A953-B2CC-4AE8-AC09-A6182DC9829F}|GarbageCollectionApp\\GarbageCollectionApp.csproj|c:\\users\\adi\\desktop\\an4\\embedded\\colectare-pubela\\embedded-project\\garbagecollectionapp\\garbagecollectionapp\\controllers\\garbagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LoadMatrixService.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Services\\LoadMatrixService.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Services\\LoadMatrixService.cs",
@@ -122,25 +122,24 @@
               "RelativeToolTip": "GarbageCollectionApp\\Services\\LoadMatrixService.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAuwBMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T10:22:09.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T10:22:09.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "RouteController.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\RouteController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\RouteController.cs",
               "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\RouteController.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Controllers\\RouteController.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAqwGUAAABoAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwEQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T12:54:47.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Coordinate.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Models\\Coordinate.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Models\\Coordinate.cs",
@@ -153,13 +152,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "MapController.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\MapController.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Controllers\\MapController.cs",
               "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Controllers\\MapController.cs",
               "RelativeToolTip": "GarbageCollectionApp\\Controllers\\MapController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T12:06:16.502Z",
               "EditorCaption": ""
@@ -172,14 +171,14 @@
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Views\\Map\\CollectionMap.cshtml",
               "ToolTip": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Views\\Map\\CollectionMap.cshtml",
               "RelativeToolTip": "GarbageCollectionApp\\Views\\Map\\CollectionMap.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAGwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-14T12:05:24.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\Program.cs",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\Program.cs",
@@ -187,12 +186,11 @@
               "RelativeToolTip": "GarbageCollectionApp\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:20:49.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T17:20:49.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Adi\\Desktop\\an4\\embedded\\Colectare-Pubela\\Embedded-Project\\GarbageCollectionApp\\GarbageCollectionApp\\appsettings.json",
               "RelativeDocumentMoniker": "GarbageCollectionApp\\appsettings.json",
@@ -200,8 +198,7 @@
               "RelativeToolTip": "GarbageCollectionApp\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-15T12:57:36.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T12:57:36.513Z"
             },
             {
               "$type": "Document",

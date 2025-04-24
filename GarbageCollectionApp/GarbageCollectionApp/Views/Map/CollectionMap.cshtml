@@ -118,7 +118,9 @@
             // use two layers, one for each type of marker
             const originalMarkerLayer = L.layerGroup().addTo(map);
             const optimizedMarkerLayer = L.layerGroup().addTo(map);
-            const allMarkers = [];
+
+            let allMarkers = []; // stores markers in the correct order
+            let animationInterval = null; // for animation loop
 
             const routeStopsList = document.getElementById('routeStopsList');
             const routeListTitle = document.getElementById('routeListTitle');
@@ -127,8 +129,11 @@
                 routeStopsList.innerHTML = '';
                 originalMarkerLayer.clearLayers();
                 routeListTitle.innerText = 'Original Stop Order';
+
+                allMarkers = [];
                 collectionPoints.forEach((point, index) => {
                     const latlng = [point.lat, point.lng];
+                    
                     const marker = L.marker(latlng, {
                         icon: createMarkerIcon('#1976d2', index + 1)
                     }).addTo(originalMarkerLayer);
@@ -138,7 +143,7 @@
                         <b>Bin ID:</b> ${point.binId}<br>
                         <b>Address:</b> ${point.address}
                     `);
-
+                    allMarkers.push(marker);
                     const li = document.createElement('li');
                     li.innerHTML = `<b>#${index + 1}</b> – ${point.address}`;
                     li.style.cursor = 'pointer';
@@ -163,12 +168,53 @@
 
             populateOriginalRoute();
 
+            //animate route
+            document.getElementById('animateRoute').addEventListener('click', function () {
+                const animateButton = document.getElementById('animateRoute');
+
+                if (animationInterval) {
+                    // Stop animation
+                    clearInterval(animationInterval);
+                    animationInterval = null;
+                    animateButton.innerText = 'Animate Route';
+
+                    // Optionally reset view or close popups
+                    allMarkers.forEach(marker => marker.closePopup());
+                    return;
+                }
+
+                // Start animation
+                let currentMarker = 0;
+                allMarkers.forEach(marker => marker.closePopup());
+
+                const animateStep = function () {
+                    if (currentMarker < allMarkers.length) {
+                        allMarkers[currentMarker].openPopup();
+                        map.flyTo(allMarkers[currentMarker].getLatLng(), 16, { duration: 1 });
+                        currentMarker++;
+                    } else {
+                        clearInterval(animationInterval);
+                        animationInterval = null;
+                        animateButton.innerText = 'Animate Route';
+                    }
+                };
+
+                if (allMarkers.length > 0) {
+                    allMarkers[0].openPopup();
+                    map.flyTo(allMarkers[0].getLatLng(), 16, { duration: 1 });
+                    currentMarker = 1;
+                    animationInterval = setInterval(animateStep, 2000);
+                    animateButton.innerText = 'Stop Animation';
+                }
+            });
+
+
             //function for reset view
             document.getElementById('resetView').addEventListener('click', function () {
                 map.fitBounds(initialBounds.pad(0.2));
             });
 
-            //function for original route, clers the layers
+            //function for original route, clears the layers
             document.getElementById('originalRoute').addEventListener('click', function () {
                 optimizedMarkerLayer.clearLayers();
                 populateOriginalRoute();
@@ -200,6 +246,7 @@
                         document.getElementById('optimizedRow').style.display = 'table-row';//makes the row visible
 
                         //loop over the indexes from optimizedOrder
+                        allMarkers = [];
                         order.forEach((i, idx) => {
                             const point = points[i];
                             const latlng = [point.latitude, point.longitude];//prepare the coordinate of the point
@@ -207,7 +254,8 @@
                             //add marker to the optimizedMarkerLayer
                             const marker = L.marker(latlng, {
                                 icon: createMarkerIcon('#f39c12', idx + 1)//start from #1 not #0
-                            }).addTo(optimizedMarkerLayer).bindPopup(`<b>Stop #${idx + 1}</b><br>${point.address}`);
+                            }).addTo(optimizedMarkerLayer).bindPopup(`<b>Stop #${idx + 1}</b><br><b>Address:</b> ${point.address}`);
+                            allMarkers.push(marker);
 
                             //creates element and makes it clickable
                             const li = document.createElement('li');
