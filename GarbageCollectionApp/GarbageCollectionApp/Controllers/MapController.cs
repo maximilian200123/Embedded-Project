@@ -1,5 +1,4 @@
-﻿// Controllers/MapController.cs
-using GarbageCollectionApp.Data;
+﻿using GarbageCollectionApp.Data;
 using GarbageCollectionApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

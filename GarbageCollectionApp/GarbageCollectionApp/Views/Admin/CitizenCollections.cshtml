@@ -1,4 +1,18 @@
 ﻿@model List<GarbageCollectionApp.Models.GarbageCollectionDTO>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 10px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+</style>
 
 <h2>Garbage Collection Records</h2>
 
@@ -16,12 +30,14 @@
         <tr>
             <th>Bin ID</th>
             <th>Collection Time</th>
+            <th>Address</th>
         </tr>
         @foreach (var c in Model)
         {
             <tr>
                 <td>@c.IdGarbageBin</td>
                 <td>@c.CollectionTime</td>
+                <td>@c.Address</td>
             </tr>
         }
     </table>
