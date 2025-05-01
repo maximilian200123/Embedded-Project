@@ -126,11 +126,19 @@ namespace GarbageCollectionApp.Controllers
             return _context.Citizens.Any(e => e.Id == id);
         }
 
-        public IActionResult DisplayBins()
+        public async Task<IActionResult> DisplayBins()
         {
-            var bins = _context.GarbageBins.ToList();
+            // get all bins
+            var allBins = await _context.GarbageBins.ToListAsync();
 
-            return View(bins);
+            // get the assigned bins
+            var assignments = await _context.GarbageBinCitizens
+                .Include(gbc => gbc.Citizen)
+                .ToListAsync();
+
+            ViewBag.AssignedBins = assignments;
+
+            return View(allBins);
         }
 
         [HttpGet]
@@ -243,65 +251,65 @@ namespace GarbageCollectionApp.Controllers
 
             ViewBag.Citizens = new SelectList(citizens, "Id", "FullName");
 
+            List<GarbageCollectionDTO> collections;
+
             if (citizenId == null)
             {
-                return View(new List<GarbageCollectionDTO>());
-            }
+                // when no citizen selected, show all collections
+                var collectionsRaw = await _context.GarbageCollections
+                    .Select(gc => new
+                    {
+                        gc.IdGarbageBin,
+                        gc.CollectionTime,
+                        gc.Address,
+                        Citizen = _context.GarbageBinCitizens
+                            .Where(gbc => gbc.IdGarbageBin == gc.IdGarbageBin)
+                            .Select(gbc => new { gbc.Citizen.Id, gbc.Citizen.FirstName, gbc.Citizen.LastName })
+                            .FirstOrDefault()
+                    })
+                    .ToListAsync();
 
-            // Getting the data for the selected citizen
-            var collectionsRaw = await _context.GarbageCollections
-                .Where(gc => _context.GarbageBinCitizens
-                    .Any(gbc => gbc.IdGarbageBin == gc.IdGarbageBin && gbc.Citizen.Id == citizenId))
-                .Select(gc => new
+                collections = collectionsRaw.Select(c => new GarbageCollectionDTO
                 {
-                    gc.IdGarbageBin,
-                    gc.CollectionTime,
-                    Citizen = _context.GarbageBinCitizens
-                        .Where(gbc => gbc.IdGarbageBin == gc.IdGarbageBin && gbc.Citizen.Id == citizenId)
-                        .Select(gbc => new { gbc.Citizen.Id, gbc.Citizen.FirstName, gbc.Citizen.LastName })
-                        .FirstOrDefault()
-                })
-                .ToListAsync();
-
-            //Assigning the anonymous data got from the first query into the DTO
-            var collections = collectionsRaw.Select(c => new GarbageCollectionDTO
+                    IdGarbageBin = c.IdGarbageBin,
+                    CollectionTime = c.CollectionTime,
+                    CitizenId = c.Citizen?.Id ?? 0,
+                    CitizenFirstName = c.Citizen?.FirstName ?? "Unknown",
+                    CitizenLastName = c.Citizen?.LastName ?? "Unknown",
+                    Address = c.Address ?? "Unknown"
+                }).ToList();
+            }
+            else
             {
-                IdGarbageBin = c.IdGarbageBin,
-                CollectionTime = c.CollectionTime,
-                CitizenId = c.Citizen?.Id ?? 0,
-                CitizenFirstName = c.Citizen?.FirstName ?? "Unknown",
-                CitizenLastName = c.Citizen?.LastName ?? "Unknown"
-            }).ToList();
+                // when citizen selected, show only their collections
+                var collectionsRaw = await _context.GarbageCollections
+                    .Where(gc => _context.GarbageBinCitizens
+                        .Any(gbc => gbc.IdGarbageBin == gc.IdGarbageBin && gbc.Citizen.Id == citizenId))
+                    .Select(gc => new
+                    {
+                        gc.IdGarbageBin,
+                        gc.CollectionTime,
+                        gc.Address,
+                        Citizen = _context.GarbageBinCitizens
+                            .Where(gbc => gbc.IdGarbageBin == gc.IdGarbageBin && gbc.Citizen.Id == citizenId)
+                            .Select(gbc => new { gbc.Citizen.Id, gbc.Citizen.FirstName, gbc.Citizen.LastName })
+                            .FirstOrDefault()
+                    })
+                    .ToListAsync();
+
+                collections = collectionsRaw.Select(c => new GarbageCollectionDTO
+                {
+                    IdGarbageBin = c.IdGarbageBin,
+                    CollectionTime = c.CollectionTime,
+                    CitizenId = c.Citizen?.Id ?? 0,
+                    CitizenFirstName = c.Citizen?.FirstName ?? "Unknown",
+                    CitizenLastName = c.Citizen?.LastName ?? "Unknown",
+                    Address = c.Address ?? "Unknown"
+                }).ToList();
+            }
 
             return View(collections);
         }
-
-        //public async Task<IActionResult> CollectionMap(DateTime? selectedDate)
-        //{
-        //    // Set default to 15.10.2024
-        //    var queryDate = selectedDate ?? new DateTime(2024, 10, 15);
-
-        //    var collections = await _context.GarbageCollections
-        //        .Where(gc => gc.CollectionTime.Date == queryDate.Date)
-        //        .OrderBy(gc => gc.CollectionTime)
-        //        .Select(gc => new
-        //        {
-        //            gc.IdGarbageBin,
-        //            CollectionTime = gc.CollectionTime.ToString("o"),
-        //            gc.Address,
-        //            gc.Latitude,
-        //            gc.Longitude
-        //        })
-        //        .ToListAsync();
-
-        //    ViewBag.Stops = new
-        //    {
-        //        StartPoint = new { Name = "SOMA HQ", Address = "Strada Șelimbărului 90, Cisnădie, Romania", Lat = 45.7315361, Lng = 24.1779393 },
-        //        FinishPoint = new { Name = "Groapa de gunoi  Cristian", Address = "DN1 FN, Cristian 557085", Lat = 45.7877059, Lng = 24.0247875 }
-        //    };
-
-        //    ViewBag.SelectedDate = queryDate.ToString("yyyy-MM-dd");
-        //    return View(collections);
-        //}
+       
     }
 }
