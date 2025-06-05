@@ -1,5 +1,7 @@
 ﻿@model List<GarbageCollectionApp.Models.GarbageBin>
-
+@{
+    var assignedBins = ViewBag.AssignedBins as List<GarbageCollectionApp.Models.GarbageBinCitizen>;
+}
 <h2>Manage Bins</h2>
 
 <a href="/Admin/AddBin" class="btn btn-primary">Add New Bin</a>
@@ -8,13 +10,36 @@
     <thead>
         <tr>
             <th>ID</th>
+            <th>Assigned To</th>
+            <th>Address</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var garbageBin in Model)
+        @foreach (var bin in Model)
         {
+            var assigned = assignedBins.FirstOrDefault(a => a.IdGarbageBin == bin.IdGarbageBin);
             <tr>
-                <td>@garbageBin.IdGarbageBin</td>
+                <td>@bin.IdGarbageBin</td>
+                <td>
+                    @if (assigned != null)
+                    {
+                        @($"{assigned.Citizen.FirstName} {assigned.Citizen.LastName}")
+                    }
+                    else
+                    {
+                        <span class="text-muted">Unassigned</span>
+                    }
+                </td>
+                <td>
+                    @if (assigned != null)
+                    {
+                        @assigned.Address
+                    }
+                    else
+                    {
+                        <span class="text-muted">N/A</span>
+                    }
+                </td>
             </tr>
         }
     </tbody>
